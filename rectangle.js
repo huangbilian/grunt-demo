@@ -1,3 +1,4 @@
+/* global $: true */
 $(function(){
   //get dom elem
   var $width = $('#width'),
@@ -15,15 +16,15 @@ $btnCal.click(function(){
       a = w*h;
 
   //浮点
-  function roundFractional(x, n) {
+  /*function roundFractional(x, n) {
       return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);  
   p = roundFractional(p, 2);
-  a = roundFractional(a, 2);
+  a = roundFractional(a, 2);*/
         
   }
-  //output
+  //output 
   $perimeter.val(p);
   $area.val(a);
-})
+});
   
-})
+});
